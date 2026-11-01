@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR.SALL – Epic Cybersecurity Cinematic Intro (1080p)</title>
+  
+  <meta name="description" content="Official cinematic hacker-style 3D intro animation for MR.SALL Cybersecurity Academy. 1080p Full HD.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Rajdhani:wght@600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="intro.css">
+</head>
+<body class="intro-body">
+
+  <!-- 16:9 1080p Stage Container -->
+  <div class="stage-wrapper" id="stage-wrapper">
+    <div class="stage-aspect-box">
+      
+      <!-- Main High-Res WebGL/Canvas 1920x1080 -->
+      <canvas id="intro-canvas" width="1920" height="1080"></canvas>
+
+      <!-- Glitch / Vignette / Scanline Cinematic Overlay Layers -->
+      <div class="cinematic-vignette"></div>
+      <div class="cinematic-scanlines"></div>
+      <div id="flash-overlay" class="flash-overlay"></div>
+
+      <!-- Initial Audio Unlock / Play Overlay -->
+      <div id="start-overlay" class="start-overlay">
+        <div class="start-card">
+          <div class="shield-pulse-icon">
+            <img id="preview-logo-thumb" src="assets/favicon.svg" alt="MR.SALL Shield" width="90" height="90">
+          </div>
+          <h1 class="start-title">MR<span class="neon-green">.</span>SALL</h1>
+          <p class="start-subtitle">CYBERSECURITY ACADEMY // CINEMATIC INTRO</p>
+          <div class="start-spec-chips">
+            <span class="spec-chip">1080p FULL HD</span>
+            <span class="spec-chip">60 FPS</span>
+            <span class="spec-chip">3D METALLIC SHIELD</span>
+            <span class="spec-chip">AUDIO SFX</span>
+          </div>
+
+          <div class="start-actions">
+            <button id="btn-start-intro" class="btn btn-epic-play">
+              <svg class="play-svg-icon" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>LAUNCH CINEMATIC INTRO</span>
+            </button>
+          </div>
+
+          <div class="logo-upload-prompt">
+            <label for="logo-file-input" class="upload-label" id="upload-label">
+              <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span id="upload-status-text">Using current official logo (Click to upload your logo file)</span>
+            </label>
+            <input type="file" id="logo-file-input" accept="image/png, image/svg+xml, image/jpeg, image/webp" class="hidden-file-input">
+          </div>
+        </div>
+      </div>
+
+      <!-- Playback Timeline / Status Bar Overlay -->
+      <div class="playback-bar" id="playback-bar">
+        <div class="timeline-track">
+          <div class="timeline-fill" id="timeline-fill"></div>
+        </div>
+        <div class="playback-info">
+          <span class="scene-indicator" id="scene-indicator">SCENE 1: DIGITAL AWAKENING</span>
+          <span class="time-counter" id="time-counter">00:00 / 00:14</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Director / Controls Floating Bar -->
+  <footer class="director-hud">
+    <div class="director-container">
+      
+      <!-- Left: Logo & Scene Indicator -->
+      <div class="director-brand">
+        <a href="index.html" class="hud-brand-link" title="Return to Website">
+          <img src="assets/favicon.svg" alt="MR.SALL" width="28" height="28">
+          <span class="hud-brand-text">MR.SALL <strong>STUDIO</strong></span>
+        </a>
+        <span class="hud-badge">PRO CINEMATIC 1080p</span>
+      </div>
+
+      <!-- Center: Playback & Export Buttons -->
+      <div class="director-controls">
+        <button id="btn-replay" class="hud-btn" title="Replay Animation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="1 4 1 10 7 10"></polyline>
+            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+          </svg>
+          <span>Replay</span>
+        </button>
+
+        <button id="btn-export-mp4" class="hud-btn hud-btn-export" title="Export as 1080p MP4 Video">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 7l-7 5 7 5V7z"></path>
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+          </svg>
+          <span id="export-btn-label">Export MP4 (1080p)</span>
+        </button>
+
+        <label for="logo-file-input-hud" class="hud-btn hud-btn-upload" title="Upload your official logo file">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+          <span>Upload Logo</span>
+        </label>
+        <input type="file" id="logo-file-input-hud" accept="image/png, image/svg+xml, image/jpeg, image/webp" class="hidden-file-input">
+      </div>
+
+      <!-- Right: Main Website Link -->
+      <div class="director-exit">
+        <a href="index.html" class="hud-btn hud-btn-main">
+          <span>Enter Website ↗</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Recording In-Progress Banner -->
+  <div id="recording-toast" class="recording-toast hidden">
+    <div class="rec-dot"></div>
+    <div class="rec-text">
+      <strong>RECORDING 1080p MP4 IN PROGRESS...</strong>
+      <span>Capturing 60 FPS video &amp; synthesized audio. Video will auto-download upon completion.</span>
+    </div>
+  </div>
+
+  <script src="intro.js"></script>
+</body>
+</html>

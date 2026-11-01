@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark-theme">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR.SALL – Cybersecurity Academy | Learn. Protect. Innovate.</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="MR.SALL Cybersecurity Academy – منصة تعليمية متقدمة في الأمن السيبراني، الاختراق الأخلاقي، وحماية البيانات. أسسها صالح عبد القيوم بالشيخ لمشاركة المعرفة وتطوير المهارات.">
+  <meta name="keywords" content="MR.SALL, Cybersecurity, الأمن السيبراني, الاختراق الأخلاقي, Ethical Hacking, صالح عبد القيوم بالشيخ, حماية البيانات, دورات أمن سيبراني, Network Security">
+  <meta name="author" content="صالح عبد القيوم بالشيخ">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mr-sall-academy.netlify.app/">
+  <meta property="og:title" content="MR.SALL – CYBERSECURITY ACADEMY">
+  <meta property="og:description" content="Learn. Protect. Innovate. منصتك التعليمية لاكتشاف عالم الأمن السيبراني وتعلم مهارات الحماية الرقمية والاختراق الأخلاقي.">
+  <meta property="og:image" content="assets/og-preview.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MR.SALL – CYBERSECURITY ACADEMY">
+  <meta name="twitter:description" content="Learn. Protect. Innovate. منصة تعليمية في الأمن السيبراني أسسها صالح عبد القيوم بالشيخ.">
+  <meta name="twitter:image" content="assets/og-preview.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Modern Cyber & Arabic Typography (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cyber Preloader Screen -->
+  <div id="cyber-preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-shield">
+        <img src="assets/favicon.svg" alt="MR.SALL Loading Shield" width="70" height="70">
+      </div>
+      <div class="preloader-brand">MR<span class="neon-green">.</span>SALL</div>
+      <div class="preloader-bar">
+        <div class="preloader-progress" id="preloader-progress"></div>
+      </div>
+      <div class="preloader-status" id="preloader-status">[SYSTEM_INITIALIZING]: SECURE ACADEMY PROTOCOLS...</div>
+    </div>
+  </div>
+
+  <!-- Background Cyber Particle Canvas -->
+  <canvas id="cyber-canvas" class="cyber-canvas" aria-hidden="true"></canvas>
+
+  <!-- Cyber Scanline Effect Overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Top System Status Banner -->
+  <header class="top-status-bar" dir="ltr">
+    <div class="container status-bar-content">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span class="status-label">MR.SALL SYSTEM: <strong>ONLINE</strong></span>
+      </div>
+      <div class="terminal-ticker">
+        <span class="ticker-text">[SEC_STATUS]: THREAT_LEVEL_MINIMAL // ENCRYPTION: AES-256 // LOCAL_STORAGE_ACTIVE</span>
+      </div>
+      <div class="academy-badge">
+        <a href="intro.html" class="status-intro-link" title="Play 1080p Cinematic Intro">
+          <span>🎬 1080p INTRO VIDEO</span>
+        </a>
+        <span>EST. 2026 // FREE EDUCATION</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-link" aria-label="MR.SALL Academy Home">
+        <img src="assets/logo.svg" alt="MR.SALL Cybersecurity Academy Logo" class="brand-logo" width="220" height="50">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#hero" class="nav-link active">الرئيسية <span class="en-sub">Home</span></a></li>
+        <li class="nav-item"><a href="intro.html" class="nav-link nav-link-intro" title="شاهد المقدمة السينمائية بدقة 1080p">🎬 المقدمة <span class="en-sub">Cinematic Intro</span></a></li>
+        <li class="nav-item"><a href="#what-is-cyber" class="nav-link">ما هو الأمن؟ <span class="en-sub">About Cyber</span></a></li>
+        <li class="nav-item"><a href="#cia-triad" class="nav-link">الثالوث الأمني <span class="en-sub">CIA Triad</span></a></li>
+        <li class="nav-item"><a href="#branches" class="nav-link">المجالات <span class="en-sub">Branches</span></a></li>
+        <li class="nav-item"><a href="#courses" class="nav-link">الدورات <span class="en-sub">Courses</span></a></li>
+        <li class="nav-item"><a href="#founder" class="nav-link">عن المؤسس <span class="en-sub">Founder</span></a></li>
+        <li class="nav-item"><a href="#register" class="nav-link">انضم إلينا <span class="en-sub">Join</span></a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">تواصل معنا <span class="en-sub">Contact</span></a></li>
+      </ul>
+
+      <!-- Nav CTA & Controls -->
+      <div class="nav-actions">
+        <!-- Quick Student ID Badge (shown if registered) -->
+        <div id="nav-student-pill" class="student-pill hidden" title="طالب مسجل محلياً">
+          <span class="student-pill-icon">🛡️</span>
+          <span id="nav-student-name" class="student-pill-name"></span>
+        </div>
+
+        <!-- Join Button -->
+        <a href="#register" class="btn btn-sm btn-outline-cyber">
+          <span>سجل الآن</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="تبديل القائمة" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- SECTION 3: HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-grid">
+          <!-- Hero Text & CTA -->
+          <div class="hero-text-col">
+            
+            <div class="cyber-badge-wrap">
+              <span class="cyber-badge">
+                <span class="badge-pulse"></span>
+                <span>CYBER DEFENSE PROTOCOL // MR.SALL</span>
+              </span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+              <span class="brand-glow">MR.SALL</span>
+              <span class="title-sub">CYBERSECURITY ACADEMY</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <h2 class="hero-subtitle" dir="ltr">
+              Learn. Protect. Innovate.
+            </h2>
+
+            <!-- Arabic Introduction -->
+            <p class="hero-intro">
+              مرحباً بك في <strong class="neon-green">MR.SALL</strong>، منصتك التعليمية لاكتشاف عالم الأمن السيبراني وتعلم مهارات الحماية الرقمية والاختراق الأخلاقي.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-btn-group">
+              <a href="intro.html" class="btn btn-epic-intro btn-glow">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>🎬 Watch Intro // المقدمة السينمائية</span>
+              </a>
+
+              <a href="#courses" class="btn btn-primary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Explore Courses // استكشف الدورات</span>
+              </a>
+
+              <a href="#what-is-cyber" class="btn btn-secondary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>Discover Cybersecurity // اكتشف الأمن</span>
+              </a>
+            </div>
+
+            <!-- Live Terminal Simulation Preview -->
+            <div class="hero-terminal" dir="ltr">
+              <div class="terminal-header">
+                <span class="t-btn red"></span>
+                <span class="t-btn yellow"></span>
+                <span class="t-btn green"></span>
+                <span class="t-title">bash - mrsall@academy:~#</span>
+              </div>
+              <div class="terminal-body">
+                <p class="t-line"><span class="t-prompt">$</span> mr-sall --init academy</p>
+                <p class="t-line t-response"><span class="neon-green">✔</span> Core modules loaded: 8 master courses [AR/EN]</p>
+                <p class="t-line t-response"><span class="neon-blue">✔</span> Security specializations: 10 branches operational</p>
+                <p class="t-line t-response"><span class="neon-green">✔</span> CIA Triad framework: Confidentiality | Integrity | Availability</p>
+                <p class="t-line"><span class="t-prompt">$</span> <span class="typing-cursor">access_level: GRANTED_FREE_FOR_ALL</span></p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual Shield & Metrics -->
+          <div class="hero-visual-col">
+            <div class="cyber-shield-card">
+              
+              <!-- Floating Corner Cyber Accents -->
+              <div class="corner-bracket top-left"></div>
+              <div class="corner-bracket top-right"></div>
+              <div class="corner-bracket bottom-left"></div>
+              <div class="corner-bracket bottom-right"></div>
+
+              <!-- Animated Hologram Shield -->
+              <div class="hologram-shield-wrapper">
+                <div class="shield-halo-rings">
+                  <div class="halo-ring ring-1"></div>
+                  <div class="halo-ring ring-2"></div>
+                  <div class="halo-ring ring-3"></div>
+                </div>
+
+                <div class="shield-emblem-large">
+                  <img src="assets/favicon.svg" alt="MR.SALL Cyber Shield" class="shield-img" width="160" height="160">
+                </div>
+              </div>
+
+              <!-- Academy Key Metrics -->
+              <div class="hero-stats-grid">
+                <div class="stat-box">
+                  <div class="stat-number neon-green" data-counter="8">8+</div>
+                  <div class="stat-desc">دورات تخصصية شاملة<br><span class="en-sub">Curated Courses</span></div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-number neon-blue" data-counter="10">10</div>
+                  <div class="stat-desc">فروع للأمن السيبراني<br><span class="en-sub">Cyber Branches</span></div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-number neon-green">100%</div>
+                  <div class="stat-desc">محتوى مجاني وموثوق<br><span class="en-sub">Free Education</span></div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-number neon-blue">CIA</div>
+                  <div class="stat-desc">ركائز الحماية الثلاث<br><span class="en-sub">Core Triad</span></div>
+                </div>
+              </div>
+
+              <div class="verified-platform-footer">
+                <span class="icon-check">✔</span>
+                <span>منصة تعليمية موثوقة برعاية صالح عبد القيوم بالشيخ</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: WHAT IS CYBERSECURITY? -->
+    <section class="section" id="what-is-cyber">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span>DEFENSE FUNDAMENTALS // الأساسيات</span>
+          </div>
+          <h2 class="section-title">
+            ما هو الأمن السيبراني؟
+            <span class="en-title" dir="ltr">What is Cybersecurity?</span>
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Main Definition Box -->
+        <div class="definition-card">
+          <div class="definition-icon-wrap">
+            <svg class="def-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M12 8v4"></path>
+              <path d="M12 16h.01"></path>
+            </svg>
+          </div>
+          <div class="definition-content">
+            <h3 class="definition-heading">المفهوم الجوهري للأمن السيبراني</h3>
+            <blockquote class="definition-text">
+              "الأمن السيبراني هو مجموعة من التقنيات والإجراءات المستخدمة لحماية الأنظمة والشبكات والأجهزة والبيانات من الهجمات الرقمية والوصول غير المصرح به."
+            </blockquote>
+            <p class="definition-subtext">
+              يهدف الأمن السيبراني إلى بناء خط دفاع رقمي متين يضمن استمرارية الأعمال، ويحمي الخصوصية الشخصية، ويحفظ سيادة البنى التحتية الحيوية من التهديدات المتطورة في الفضاء الإلكتروني.
+            </p>
+          </div>
+        </div>
+
+        <!-- CIA TRIAD (SECTION 7 CONTINUED) -->
+        <div class="cia-triad-wrapper" id="cia-triad">
+          
+          <div class="sub-header text-center">
+            <h3 class="sub-title">
+              الثالوث الأمني الأساسي: CIA Triad
+            </h3>
+            <p class="sub-desc">
+              ترتكز جميع معايير واستراتيجيات الأمن السيبراني العالمية على ثلاثة مبادئ جوهرية غير قابلة للتجزئة:
+            </p>
+          </div>
+
+          <div class="triad-cards-grid">
+            
+            <!-- Principle 1: Confidentiality -->
+            <div class="triad-card" data-triad="C">
+              <div class="triad-badge">المبدأ الأول</div>
+              <div class="triad-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h4 class="triad-title">
+                Confidentiality
+                <span class="ar-triad">السرية والخصوصية</span>
+              </h4>
+              <p class="triad-explanation">
+                حماية البيانات والمعلومات من الوصول غير المصرح به، بحيث لا يطلع عليها إلا الأشخاص والأنظمة المخوّلون فقط، ومنع تسريب أسرار المستخدمين أو المنظمات.
+              </p>
+              <div class="triad-example">
+                <strong class="example-label">💡 مثال عملي:</strong>
+                <span>تشفير البيانات أثناء النقل (TLS/HTTPS) وتشفير قواعد البيانات (AES-256)، بالإضافة إلى تفعيل المصادقة الثنائية (2FA) لحماية الحسابات.</span>
+              </div>
+            </div>
+
+            <!-- Principle 2: Integrity -->
+            <div class="triad-card" data-triad="I">
+              <div class="triad-badge">المبدأ الثاني</div>
+              <div class="triad-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h4 class="triad-title">
+                Integrity
+                <span class="ar-triad">السلامة والتكامل</span>
+              </h4>
+              <p class="triad-explanation">
+                ضمان دقة وصحة البيانات وعدم التلاعب بها أو تعديلها أو حذفها بطريقة غير قانونية أو عشوائية سواء أثناء نقلها عبر الشبكة أو أثناء تخزينها.
+              </p>
+              <div class="triad-example">
+                <strong class="example-label">💡 مثال عملي:</strong>
+                <span>استخدام دوال التجزئة الرياضية (Hashing مثل SHA-256) والتوقيعات الرقمية للتحقق من أن الملفات والبرمجيات لم يقم أحد بالتلاعب بها أو حقنها بأكواد ضارة.</span>
+              </div>
+            </div>
+
+            <!-- Principle 3: Availability -->
+            <div class="triad-card" data-triad="A">
+              <div class="triad-badge">المبدأ الثالث</div>
+              <div class="triad-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h4 class="triad-title">
+                Availability
+                <span class="ar-triad">التوافر والجاهزية</span>
+              </h4>
+              <p class="triad-explanation">
+                ضمان استمرارية عمل الأنظمة والخدمات والشبكات وإتاحة البيانات للمستخدمين والعملاء المصرح لهم في أي وقت يحتاجون إليها دون انقطاع أو بطء.
+              </p>
+              <div class="triad-example">
+                <strong class="example-label">💡 مثال عملي:</strong>
+                <span>نظم الحماية ضد هجمات حجب الخدمة الموزعة (DDoS Mitigation)، وتوزيع الأحمال (Load Balancing)، والنسخ الاحتياطية الموزعة جغرافياً (Disaster Recovery).</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 8: CYBERSECURITY SPECIALIZATIONS -->
+    <section class="section section-darker" id="branches">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span>DOMAINS & CAREERS // مجالات التخصص</span>
+          </div>
+          <h2 class="section-title">
+            فروع ومجالات الأمن السيبراني
+            <span class="en-title" dir="ltr">Branches of Cybersecurity</span>
+          </h2>
+          <p class="section-lead">
+            استكشف الفروع العشرة الأساسية التي تشكل عالم الأمن السيبراني المعاصر، وتعرف على وظيفة كل تخصص ودوره الحيوي في حماية الفضاء الرقمي.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- 10 Specializations Grid -->
+        <div class="specializations-grid">
+          
+          <!-- 1. Ethical Hacking -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 17l6-6-6-6"></path>
+                  <path d="M12 19h8"></path>
+                </svg>
+              </div>
+              <span class="branch-index">01</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Ethical Hacking</h3>
+            <h4 class="branch-title-ar">الاختراق الأخلاقي</h4>
+            <p class="branch-desc">
+              استخدام تقنيات وأدوات الهاكرز الحقيقية بإذن قانوني مسبق لمحاكاة الهجمات السيبرانية واكتشاف نقاط الضعف قبل أن يستغلها القراصنة المهاجمون.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>تعاقد بنك مع مخترق أخلاقي لمحاولة اختراق تطبيق الخدمات المصرفية لمعالجة الثغرات قبل إطلاق التحديث للجمهور.</span>
+            </div>
+          </div>
+
+          <!-- 2. Network Security -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <span class="branch-index">02</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Network Security</h3>
+            <h4 class="branch-title-ar">أمن الشبكات</h4>
+            <p class="branch-desc">
+              حماية البنية التحتية للشبكات السلكية واللاسلكية، وأجهزة التوجيه، والمحولات ضد التسلل غير المصرح به، والتنصت، وتعديل حزم البيانات.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>تكوين جدران الحماية النارية (Firewalls) وأنظمة كشف ومنع التسلل (IDS/IPS) لمراقبة حركة مرور البيانات وحظر الاتصالات المشبوهة.</span>
+            </div>
+          </div>
+
+          <!-- 3. Application Security -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <span class="branch-index">03</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Application Security</h3>
+            <h4 class="branch-title-ar">أمن التطبيقات</h4>
+            <p class="branch-desc">
+              تأمين الشفرات البرمجية وتطبيقات الويب والهواتف طوال دورة حياة التطوير البرمجي (DevSecOps) لسد الثغرات مثل حقن SQL والبرمجة النصية عبر المواقع (XSS).
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>فحص الكود المصدري تلقائياً (SAST/DAST) لمنع إدخال بيانات غير مدققة قد تؤدي لتسريب سجلات قاعدة البيانات.</span>
+            </div>
+          </div>
+
+          <!-- 4. Cloud Security -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <span class="branch-index">04</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Cloud Security</h3>
+            <h4 class="branch-title-ar">أمن الحوسبة السحابية</h4>
+            <p class="branch-desc">
+              تطبيق استراتيجيات وسياسات أمنية صارمة لحماية البنى التحتية والتطبيقات وقواعد البيانات المستضافة على منصات سحابية مثل AWS وGoogle Cloud وAzure.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>إدارة صلاحيات الوصول المشددة (IAM) وتشفير حاويات التخزين السحابي (S3 Buckets) لمنع تركها مفتوحة للعامة دون إذن.</span>
+            </div>
+          </div>
+
+          <!-- 5. Digital Forensics -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  <path d="M11 8a3 3 0 0 0-3 3"></path>
+                </svg>
+              </div>
+              <span class="branch-index">05</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Digital Forensics</h3>
+            <h4 class="branch-title-ar">الأدلة الجنائية الرقمية</h4>
+            <p class="branch-desc">
+              جمع واسترجاع وتحليل الأدلة الرقمية من الأجهزة المخترقة ووسائط التخزين بطرق قانونية دقيقة لإثبات كيفية وقوع الجريمة السيبرانية وتحديد الجاني.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>فحص ذاكرة الوصول العشوائي (RAM) والأقراص الصلبة لحاسوب تم اختراقه لاستعادة سجلات الهجوم والملفات المحذوفة لتقديمها للمحكمة.</span>
+            </div>
+          </div>
+
+          <!-- 6. Malware Analysis -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="6" width="20" height="8" rx="1"></rect>
+                  <path d="M17 14v7"></path>
+                  <path d="M7 14v7"></path>
+                  <path d="M17 3v3"></path>
+                  <path d="M7 3v3"></path>
+                  <path d="M10 14v4"></path>
+                  <path d="M14 14v4"></path>
+                </svg>
+              </div>
+              <span class="branch-index">06</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Malware Analysis</h3>
+            <h4 class="branch-title-ar">تحليل البرمجيات الخبيثة</h4>
+            <p class="branch-desc">
+              تفكيك ودراسة سلوك الفيروسات، وبرامج الفدية (Ransomware)، وأحصنة طروادة داخل بيئات معزولة (Sandboxes) لفهم آليات عملها وتطوير مضادات لها.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>الهندسة العكسية لبرمجية فدية جديدة لاستخراج مفتاح فك التشفير ومساعدة الضحايا على استعادة ملفاتهم دون دفع فدية.</span>
+            </div>
+          </div>
+
+          <!-- 7. Incident Response -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                  <line x1="12" y1="9" x2="12" y2="13"></line>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+              <span class="branch-index">07</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Incident Response</h3>
+            <h4 class="branch-title-ar">الاستجابة للحوادث</h4>
+            <p class="branch-desc">
+              إجراءات وخطة الطوارئ التي يتخذها فريق الأمن عند حدوث اختراق أمني فعلي لاحتواء التهديد سريعاً، وتقليل الأضرار، واستعادة الأنظمة للعمل بأمان.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>عزل خوادم مصابة فورياً عن باقي شبكة المؤسسة لمنع انتشار برمجية خبيثة، والبدء في استعادة النسخ الاحتياطية النظيفة.</span>
+            </div>
+          </div>
+
+          <!-- 8. Cryptography -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="8" cy="8" r="6"></circle>
+                  <path d="M18.09 10.37A6 6 0 1 1 10.34 18.1"></path>
+                  <path d="M7 6h1v4"></path>
+                  <path d="m16.5 16.5 4.5 4.5"></path>
+                  <path d="m19 19-2 2"></path>
+                </svg>
+              </div>
+              <span class="branch-index">08</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Cryptography</h3>
+            <h4 class="branch-title-ar">علم التشفير</h4>
+            <p class="branch-desc">
+              العلم الرياضي المعني بتحويل البيانات المفهومة إلى نصوص مشفرة غير قابلة للقراءة إلا لمن يملك مفتاح التشفير الصحيح، لحماية سرية وصحة البيانات.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>تشفير المحادثات بتقنية طرف-إلى-طرف (End-to-End Encryption) في تطبيقات المراسلة لمنع أي طرف ثالث أو مزود الخدمة من قراءتها.</span>
+            </div>
+          </div>
+
+          <!-- 9. Penetration Testing -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="22" y1="12" x2="18" y2="12"></line>
+                  <line x1="6" y1="12" x2="2" y2="12"></line>
+                  <line x1="12" y1="6" x2="12" y2="2"></line>
+                  <line x1="12" y1="22" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <span class="branch-index">09</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Penetration Testing</h3>
+            <h4 class="branch-title-ar">اختبار الاختراق</h4>
+            <p class="branch-desc">
+              عملية منهجية لاختبار قوة الدفاعات الرقمية عبر فحص المنافذ والبروتوكولات ونقاط الضعف البرمجية وتقديم تقرير مفصل بإجراءات المعالجة والتصحيح.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>تنفيذ محاكاة هجوم اختراق شامل (Pen-Test) لشبكة مستشفى لضمان عدم إمكانية وصول أي دخيل إلى سجلات المرضى الحساسة.</span>
+            </div>
+          </div>
+
+          <!-- 10. Information Security -->
+          <div class="branch-card">
+            <div class="branch-icon-header">
+              <div class="branch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <span class="branch-index">10</span>
+            </div>
+            <h3 class="branch-title-en" dir="ltr">Information Security</h3>
+            <h4 class="branch-title-ar">أمن المعلومات</h4>
+            <p class="branch-desc">
+              المجال الشامل والاستراتيجي المعني بوضع سياسات الأمان والحوكمة والامتثال للمعايير الدولية (مثل ISO 27001) وإدارة المخاطر لحماية جميع أصول البيانات.
+            </p>
+            <div class="branch-example">
+              <span class="ex-badge">مثال واقعي:</span>
+              <span>صياغة سياسات التعامل مع كلمات المرور للموظفين، وتحديد مستويات التصريح لكل موظف وفق مبدأ الحد الأدنى من الامتيازات (Least Privilege).</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: CYBERSECURITY COURSES -->
+    <section class="section" id="courses">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span>CURATED LEARNING PATHS // مسارات التعلم</span>
+          </div>
+          <h2 class="section-title">
+            الدورات التعليمية
+            <span class="en-title" dir="ltr">Educational Courses</span>
+          </h2>
+          <p class="section-lead">
+            مجموعة مختارة بعناية من أفضل الكورسات وقوائم التشغيل المعتمدة من يوتيوب باللغتين العربية والإنجليزية لتبدأ رحلتك من الصفر حتى الاحتراف.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Course Controls: Search & Tabs -->
+        <div class="course-controls">
+          
+          <!-- Category Tabs -->
+          <div class="course-tabs" role="tablist">
+            <button class="course-tab-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span>جميع الدورات (All)</span>
+              <span class="badge-count" id="count-all">8</span>
+            </button>
+            <button class="course-tab-btn" data-filter="arabic" role="tab" aria-selected="false">
+              <span>دورات عربية (Arabic)</span>
+              <span class="badge-count" id="count-ar">4</span>
+            </button>
+            <button class="course-tab-btn" data-filter="english" role="tab" aria-selected="false">
+              <span>دورات إنجليزية (English)</span>
+              <span class="badge-count" id="count-en">4</span>
+            </button>
+          </div>
+
+          <!-- Live Search Input -->
+          <div class="course-search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="course-search-input" placeholder="ابحث باسم الدورة أو مقدم الكورس..." aria-label="ابحث في الدورات">
+            <button id="search-clear-btn" class="search-clear hidden" aria-label="مسح البحث">✕</button>
+          </div>
+
+        </div>
+
+        <!-- Results Counter & Status -->
+        <div class="search-results-bar">
+          <span id="results-count-text">يتم عرض 8 دورات تدريبية متوفرة</span>
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="courses-grid" id="courses-grid">
+          
+          <!-- ==================== ARABIC COURSES ==================== -->
+
+          <!-- Arabic Course 1 -->
+          <article class="course-card" data-category="arabic" data-title="دورة أساسيات الأمن السيبراني" data-author="Secure The Humans">
+            <div class="course-media">
+              <img src="assets/courses/ar-course-1.jpg" alt="دورة أساسيات الأمن السيبراني" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/videoseries?list=PLh2Jy0nKL_j1WZMzITHgUuzaadpSULlMm" data-title="دورة أساسيات الأمن السيبراني" data-url="https://www.youtube.com/playlist?list=PLh2Jy0nKL_j1WZMzITHgUuzaadpSULlMm" aria-label="تشغيل دورة أساسيات الأمن السيبراني">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-ar">عربي // AR</span>
+              <span class="type-badge">قائمة تشغيل (Playlist)</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  Secure The Humans
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title">دورة أساسيات الأمن السيبراني</h3>
+              <p class="course-summary">
+                دورة تأسيسية متكاملة تشرح المفاهيم الجوهرية للأمن السيبراني، أمن المعلومات، ووسائل الحماية الشائعة ضد المخاطر الرقمية.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/videoseries?list=PLh2Jy0nKL_j1WZMzITHgUuzaadpSULlMm" data-title="دورة أساسيات الأمن السيبراني" data-url="https://www.youtube.com/playlist?list=PLh2Jy0nKL_j1WZMzITHgUuzaadpSULlMm">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/playlist?list=PLh2Jy0nKL_j1WZMzITHgUuzaadpSULlMm" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="فتح في نافذة يوتيوب مستقلة">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Arabic Course 2 -->
+          <article class="course-card" data-category="arabic" data-title="تعلم الأمن السيبراني من الصفر" data-author="Anas Education">
+            <div class="course-media">
+              <img src="assets/courses/ar-course-2.jpg" alt="تعلم الأمن السيبراني من الصفر" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/videoseries?list=PLmtbbA6KEHqqxKS9JlsTLyJp7VKWi3mcA" data-title="تعلم الأمن السيبراني من الصفر" data-url="https://www.youtube.com/playlist?list=PLmtbbA6KEHqqxKS9JlsTLyJp7VKWi3mcA" aria-label="تشغيل تعلم الأمن السيبراني من الصفر">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-ar">عربي // AR</span>
+              <span class="type-badge">قائمة تشغيل (Playlist)</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  Anas Education
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title">تعلم الأمن السيبراني من الصفر</h3>
+              <p class="course-summary">
+                مسار منهجي مبسط للمبتدئين يقودك خطوة بخطوة لفهم شبكات الحاسوب، أمن الأنظمة، وتطبيقات الحماية العملية دون تعقيد.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/videoseries?list=PLmtbbA6KEHqqxKS9JlsTLyJp7VKWi3mcA" data-title="تعلم الأمن السيبراني من الصفر" data-url="https://www.youtube.com/playlist?list=PLmtbbA6KEHqqxKS9JlsTLyJp7VKWi3mcA">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/playlist?list=PLmtbbA6KEHqqxKS9JlsTLyJp7VKWi3mcA" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="فتح في نافذة يوتيوب مستقلة">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Arabic Course 3 -->
+          <article class="course-card" data-category="arabic" data-title="تعلم الهكر الاخلاقي - دورة 6 ساعات" data-author="صحيح">
+            <div class="course-media">
+              <img src="assets/courses/ar-course-3.jpg" alt="تعلم الهكر الاخلاقي - دورة 6 ساعات" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/qaNZKH5NohQ" data-title="تعلم الهكر الاخلاقي - دورة 6 ساعات" data-url="https://www.youtube.com/watch?v=qaNZKH5NohQ" aria-label="تشغيل دورة تعلم الهكر الاخلاقي">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-ar">عربي // AR</span>
+              <span class="type-badge">فيديو شامل (6 Hours)</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  صحيح (@S7ee7)
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title">تعلم الهكر الاخلاقي - دورة 6 ساعات</h3>
+              <p class="course-summary">
+                كورس مكثف مدته 6 ساعات يقدم دليلاً شاملاً وتطبيقياً لتعلم تقنيات الاختراق الأخلاقي، فحص الثغرات، وأدوات الحماية والتأمين.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/qaNZKH5NohQ" data-title="تعلم الهكر الاخلاقي - دورة 6 ساعات" data-url="https://www.youtube.com/watch?v=qaNZKH5NohQ">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/watch?v=qaNZKH5NohQ" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="فتح في نافذة يوتيوب مستقلة">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Arabic Course 4 -->
+          <article class="course-card" data-category="arabic" data-title="بايثون الأمن السيبراني من الصفر" data-author="CythonRK">
+            <div class="course-media">
+              <img src="assets/courses/ar-course-4.jpg" alt="بايثون الأمن السيبراني من الصفر" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/videoseries?list=PLQecpJ5wKrfsF7mZVJxvy53I7FimkGxzZ" data-title="بايثون الأمن السيبراني من الصفر" data-url="https://www.youtube.com/playlist?list=PLQecpJ5wKrfsF7mZVJxvy53I7FimkGxzZ" aria-label="تشغيل بايثون الأمن السيبراني">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-ar">عربي // AR</span>
+              <span class="type-badge">قائمة تشغيل (Playlist)</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  CythonRK (@Rakthon)
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title">بايثون الأمن السيبراني من الصفر</h3>
+              <p class="course-summary">
+                تعلم كيفية برمجة أدوات الأمن السيبراني والاختبار الآلي وبناء السكربتات المخصصة لفحص الشبكات باستخدام لغة Python.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/videoseries?list=PLQecpJ5wKrfsF7mZVJxvy53I7FimkGxzZ" data-title="بايثون الأمن السيبراني من الصفر" data-url="https://www.youtube.com/playlist?list=PLQecpJ5wKrfsF7mZVJxvy53I7FimkGxzZ">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/playlist?list=PLQecpJ5wKrfsF7mZVJxvy53I7FimkGxzZ" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="فتح في نافذة يوتيوب مستقلة">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ==================== ENGLISH COURSES ==================== -->
+
+          <!-- English Course 1 -->
+          <article class="course-card" data-category="english" data-title="Cyber Security Training for Beginners | Edureka" data-author="edureka!">
+            <div class="course-media">
+              <img src="assets/courses/en-course-1.jpg" alt="Cyber Security Training for Beginners | Edureka" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/videoseries?list=PL9ooVrP1hQOGPQVeapGsJCktzIO4DtI4_" data-title="Cyber Security Training for Beginners | Edureka" data-url="https://www.youtube.com/playlist?list=PL9ooVrP1hQOGPQVeapGsJCktzIO4DtI4_" aria-label="Play Cyber Security Training for Beginners">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-en">English // EN</span>
+              <span class="type-badge">Playlist // سلسلة كاملة</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  edureka!
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title" dir="ltr">Cyber Security Training for Beginners | Edureka</h3>
+              <p class="course-summary">
+                A renowned structured master training series covering security fundamentals, cryptography, ethical hacking, and industry best practices.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/videoseries?list=PL9ooVrP1hQOGPQVeapGsJCktzIO4DtI4_" data-title="Cyber Security Training for Beginners | Edureka" data-url="https://www.youtube.com/playlist?list=PL9ooVrP1hQOGPQVeapGsJCktzIO4DtI4_">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/playlist?list=PL9ooVrP1hQOGPQVeapGsJCktzIO4DtI4_" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="Open playlist on YouTube">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- English Course 2 -->
+          <article class="course-card" data-category="english" data-title="Full Ethical Hacking Course - Network Penetration Testing for Beginners (2019)" data-author="freeCodeCamp.org">
+            <div class="course-media">
+              <img src="assets/courses/en-course-2.jpg" alt="Full Ethical Hacking Course - Network Penetration Testing for Beginners (2019)" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/3Kq1MIfTWCE" data-title="Full Ethical Hacking Course - Network Penetration Testing for Beginners (2019)" data-url="https://www.youtube.com/watch?v=3Kq1MIfTWCE&t=51486s" aria-label="Play Full Ethical Hacking Course">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-en">English // EN</span>
+              <span class="type-badge">Masterclass // 15 Hours</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  freeCodeCamp.org
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title" dir="ltr">Full Ethical Hacking Course - Network Penetration Testing for Beginners (2019)</h3>
+              <p class="course-summary">
+                A legendary, highly detailed 15-hour masterclass by Heath Adams (The Cyber Mentor) teaching practical network penetration testing from scratch.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/3Kq1MIfTWCE" data-title="Full Ethical Hacking Course - Network Penetration Testing for Beginners (2019)" data-url="https://www.youtube.com/watch?v=3Kq1MIfTWCE&t=51486s">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/watch?v=3Kq1MIfTWCE&t=51486s" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="Open on YouTube">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- English Course 3 -->
+          <article class="course-card" data-category="english" data-title="Cybersecurity Mastery: Complete Course in a Single Video | Cybersecurity For Beginners" data-author="Nerd's lesson">
+            <div class="course-media">
+              <img src="assets/courses/en-course-3.jpg" alt="Cybersecurity Mastery: Complete Course in a Single Video | Cybersecurity For Beginners" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/s19BxFpoSd0" data-title="Cybersecurity Mastery: Complete Course in a Single Video | Cybersecurity For Beginners" data-url="https://www.youtube.com/watch?v=s19BxFpoSd0" aria-label="Play Cybersecurity Mastery">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-en">English // EN</span>
+              <span class="type-badge">Full Course // فيديو شامل</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  Nerd's lesson
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title" dir="ltr">Cybersecurity Mastery: Complete Course in a Single Video | Cybersecurity For Beginners</h3>
+              <p class="course-summary">
+                An all-in-one intensive video training breaking down core defense pillars, network layers, cyber threats, and security architectures.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/s19BxFpoSd0" data-title="Cybersecurity Mastery: Complete Course in a Single Video | Cybersecurity For Beginners" data-url="https://www.youtube.com/watch?v=s19BxFpoSd0">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/watch?v=s19BxFpoSd0" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="Open on YouTube">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- English Course 4 -->
+          <article class="course-card" data-category="english" data-title="Ethical Hacking in 12 Hours - Full Course - Learn to Hack!" data-author="The Cyber Mentors">
+            <div class="course-media">
+              <img src="assets/courses/en-course-4.jpg" alt="Ethical Hacking in 12 Hours - Full Course - Learn to Hack!" class="course-thumb" loading="lazy">
+              <div class="course-overlay">
+                <button class="btn-play-trigger" data-embed="https://www.youtube.com/embed/fNzpcB7ODxQ" data-title="Ethical Hacking in 12 Hours - Full Course - Learn to Hack!" data-url="https://www.youtube.com/watch?v=fNzpcB7ODxQ" aria-label="Play Ethical Hacking in 12 Hours">
+                  <svg class="play-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </button>
+              </div>
+              <span class="lang-badge lang-en">English // EN</span>
+              <span class="type-badge">Full Course // 12 Hours</span>
+            </div>
+
+            <div class="course-body">
+              <div class="course-meta">
+                <span class="course-author">
+                  <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  The Cyber Mentors
+                </span>
+                <span class="course-platform">
+                  <svg class="yt-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </span>
+              </div>
+
+              <h3 class="course-title" dir="ltr">Ethical Hacking in 12 Hours - Full Course - Learn to Hack!</h3>
+              <p class="course-summary">
+                A world-class 12-hour practical walkthrough by Heath Adams covering reconnaissance, scanning, vulnerability analysis, and real-world exploit mitigation.
+              </p>
+
+              <div class="course-actions">
+                <button class="btn btn-sm btn-play-course" data-embed="https://www.youtube.com/embed/fNzpcB7ODxQ" data-title="Ethical Hacking in 12 Hours - Full Course - Learn to Hack!" data-url="https://www.youtube.com/watch?v=fNzpcB7ODxQ">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>مشاهدة الدورة (Watch)</span>
+                </button>
+                <a href="https://www.youtube.com/watch?v=fNzpcB7ODxQ" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-yt-link" title="Open on YouTube">
+                  <svg class="btn-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>YouTube ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No Results Fallback Message -->
+        <div id="no-courses-msg" class="no-results hidden">
+          <div class="no-results-icon">🔍</div>
+          <h3>لم يتم العثور على أي دورة تطابق بحثك</h3>
+          <p>يرجى تجربة كلمات بحث أخرى أو تغيير التبويب المختار.</p>
+          <button id="reset-filter-btn" class="btn btn-sm btn-outline-cyber">إعادة ضبط التصفية</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT ME (FOUNDER) -->
+    <section class="section section-darker" id="founder">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span>VISIONARY & LEAD // القيادة والرؤية</span>
+          </div>
+          <h2 class="section-title">
+            عن المؤسس
+            <span class="en-title" dir="ltr">About the Founder</span>
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="founder-card-wrapper">
+          <div class="founder-card">
+            
+            <!-- Cyber Corner Accents -->
+            <div class="corner-bracket top-left"></div>
+            <div class="corner-bracket top-right"></div>
+            <div class="corner-bracket bottom-left"></div>
+            <div class="corner-bracket bottom-right"></div>
+
+            <div class="founder-grid">
+              
+              <!-- Avatar Column -->
+              <div class="founder-avatar-col">
+                <div class="avatar-ring-wrap">
+                  <div class="avatar-scan-ring"></div>
+                  <img src="assets/founder-avatar.svg" alt="صالح عبد القيوم بالشيخ" class="founder-avatar-img" width="220" height="220">
+                  <div class="founder-verified-badge" title="Verified Founder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="founder-name-wrap">
+                  <h3 class="founder-name">صالح عبد القيوم بالشيخ</h3>
+                  <div class="founder-role" dir="ltr">Developer &amp; Cybersecurity Specialist</div>
+                </div>
+
+                <div class="founder-tags">
+                  <span class="founder-tag">🎮 Game Dev</span>
+                  <span class="founder-tag">🌐 Web Dev</span>
+                  <span class="founder-tag">🛡️ Cybersecurity</span>
+                  <span class="founder-tag">⚡ Ethical Hacking</span>
+                </div>
+              </div>
+
+              <!-- Bio & Message Column -->
+              <div class="founder-bio-col">
+                
+                <div class="bio-quote-header">
+                  <svg class="quote-svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                  </svg>
+                  <span class="quote-title">رسالة المؤسس للطلاب والمتعلمين:</span>
+                </div>
+
+                <!-- Exact Founder Description -->
+                <div class="founder-exact-description">
+                  <p class="founder-p">
+                    "أنا صالح عبد القيوم بالشيخ، متخصص في تطوير الألعاب وصناعة المواقع والأمن السيبراني.
+                  </p>
+                  <p class="founder-p">
+                    قمت بتصميم هذا الموقع بهدف مشاركة المعرفة وتوفير منصة تعليمية لكل شخص شغوف بعالم التكنولوجيا والأمن السيبراني.
+                  </p>
+                  <p class="founder-p">
+                    وضعت لكم مجموعة من الدورات التعليمية باللغة العربية والإنجليزية، وهي عبارة عن فيديوهات وقوائم تشغيل تعليمية من YouTube لمصادر موثوقة، حتى يتمكن الجميع من التعلم وتطوير مهاراتهم."
+                  </p>
+                </div>
+
+                <!-- Values / Highlights -->
+                <div class="founder-values-grid">
+                  <div class="value-item">
+                    <span class="val-icon">💡</span>
+                    <div>
+                      <strong>مشاركة المعرفة</strong>
+                      <span>إتاحة العلم للجميع بالمجان لتمكين الأجيال القادمة.</span>
+                    </div>
+                  </div>
+                  <div class="value-item">
+                    <span class="val-icon">🔒</span>
+                    <div>
+                      <strong>الوعي السيبراني</strong>
+                      <span>ترسيخ ثقافة الحماية الرقمية والمسؤولية الأخلاقية.</span>
+                    </div>
+                  </div>
+                  <div class="value-item">
+                    <span class="val-icon">🚀</span>
+                    <div>
+                      <strong>الابتكار المستمر</strong>
+                      <span>دمج مهارات تطوير البرمجيات وحماية الفضاء الرقمي.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Contact Founder CTA -->
+                <div class="founder-cta-row">
+                  <a href="#contact" class="btn btn-outline-cyber">
+                    <span>تواصل مع المؤسس</span>
+                  </a>
+                  <a href="#register" class="btn btn-primary">
+                    <span>انضم للأكاديمية الآن</span>
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: COURSE REGISTRATION -->
+    <section class="section" id="register">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span>START YOUR JOURNEY // ابدأ رحلتك</span>
+          </div>
+          <!-- Section Title -->
+          <h2 class="section-title">
+            انضم إلى الأكاديمية
+            <span class="en-title" dir="ltr">Join Our Academy</span>
+          </h2>
+          <!-- Description -->
+          <p class="section-lead">
+            سجل الآن وابدأ رحلتك في تعلم الأمن السيبراني.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="registration-wrapper">
+          <div class="registration-card">
+            
+            <div class="corner-bracket top-left"></div>
+            <div class="corner-bracket top-right"></div>
+            <div class="corner-bracket bottom-left"></div>
+            <div class="corner-bracket bottom-right"></div>
+
+            <!-- Registration Header Banner -->
+            <div class="reg-header-banner">
+              <div class="reg-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="8.5" cy="7" r="4"></circle>
+                  <line x1="20" y1="8" x2="20" y2="14"></line>
+                  <line x1="23" y1="11" x2="17" y2="11"></line>
+                </svg>
+              </div>
+              <div class="reg-header-texts">
+                <h3 class="reg-title">تسجيل عضوية طالب جديد</h3>
+                <span class="reg-subtitle">Instant Local Academy Access // تفعيل فوري</span>
+              </div>
+            </div>
+
+            <!-- Active Registered Student ID Badge (shown dynamically if already registered) -->
+            <div id="existing-student-badge" class="registered-student-badge hidden">
+              <div class="badge-header">
+                <span class="badge-status-dot"></span>
+                <span class="badge-status-title">طالب مسجل حالياً في المنصة (VERIFIED STUDENT)</span>
+              </div>
+              <div class="badge-content">
+                <div class="badge-avatar-mini">🛡️</div>
+                <div class="badge-info">
+                  <div class="badge-student-name" id="badge-display-name">صالح محمد</div>
+                  <div class="badge-student-meta">معرف الطالب: <span id="badge-display-id" class="neon-green">#MR-7821</span> // الحالة: نشط</div>
+                </div>
+              </div>
+              <div class="badge-actions">
+                <button id="btn-edit-student" class="btn btn-xs btn-outline-cyber">تحديث الاسم</button>
+                <button id="btn-reset-student" class="btn btn-xs btn-danger">إلغاء التسجيل المحلي</button>
+              </div>
+            </div>
+
+            <!-- Form: Contains ONLY First Name and Last Name -->
+            <form id="academy-registration-form" class="reg-form" novalidate>
+              
+              <div class="form-row">
+                <!-- First Name Field -->
+                <div class="form-group">
+                  <label for="first-name" class="form-label">
+                    <span>الاسم الأول</span>
+                    <span class="en-label" dir="ltr">First Name *</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <input 
+                      type="text" 
+                      id="first-name" 
+                      name="firstName" 
+                      class="form-control" 
+                      placeholder="أدخل اسمك الأول (مثال: أحمد)" 
+                      autocomplete="given-name" 
+                      required>
+                  </div>
+                  <span class="field-error" id="first-name-error"></span>
+                </div>
+
+                <!-- Last Name Field -->
+                <div class="form-group">
+                  <label for="last-name" class="form-label">
+                    <span>اسم العائلة / اللقب</span>
+                    <span class="en-label" dir="ltr">Last Name *</span>
+                  </label>
+                  <div class="input-wrapper">
+                    <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <input 
+                      type="text" 
+                      id="last-name" 
+                      name="lastName" 
+                      class="form-control" 
+                      placeholder="أدخل اسم العائلة (مثال: الشريف)" 
+                      autocomplete="family-name" 
+                      required>
+                  </div>
+                  <span class="field-error" id="last-name-error"></span>
+                </div>
+              </div>
+
+              <!-- Button: Register Now -->
+              <div class="form-submit-row">
+                <button type="submit" id="btn-register-submit" class="btn btn-primary btn-glow btn-block">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Register Now // سجل الآن</span>
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Dynamic Feedback Alert Box -->
+            <div id="registration-feedback" class="feedback-alert hidden" role="alert">
+              <div class="feedback-icon" id="feedback-icon"></div>
+              <div class="feedback-text" id="feedback-message"></div>
+            </div>
+
+            <!-- Transparent Privacy & Local Storage Explanation -->
+            <div class="privacy-disclaimer">
+              <div class="disclaimer-icon">ℹ️</div>
+              <p class="disclaimer-text">
+                <strong>تنويه الخصوصية والأمان:</strong> هذا التسجيل محلي وخاص بجهازك تماماً يتم حفظه عبر متصفحك (Browser localStorage). لا يتم إنشاء حساب سحابي خارجي ولا يتم طلب أي كلمات مرور، أو بريد إلكتروني، أو أي بيانات شخصية حساسة على الإطلاق. الهدف من هذا التسجيل هو تخصيص واجهة المنصة وترحيبك كطالب في الأكاديمية.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 9: CONTACT -->
+    <section class="section section-darker" id="contact">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag">
+            <span>GET IN TOUCH // تواصل معنا</span>
+          </div>
+          <!-- Section Title -->
+          <h2 class="section-title">
+            تواصل مع MR.SALL
+            <span class="en-title" dir="ltr">Connect With MR.SALL</span>
+          </h2>
+          <p class="section-lead">
+            هل لديك استفسار، اقتراح لتطوير المنصة، أو ترغب في تبادل الخبرات التقنية؟ نسعد دائماً بتواصلك المباشر.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-card-wrapper">
+          <div class="contact-card">
+            
+            <div class="corner-bracket top-left"></div>
+            <div class="corner-bracket top-right"></div>
+            <div class="corner-bracket bottom-left"></div>
+            <div class="corner-bracket bottom-right"></div>
+
+            <div class="contact-content-grid">
+              
+              <!-- Contact Info -->
+              <div class="contact-info-col">
+                <div class="contact-badge-header">
+                  <span class="pulse-dot"></span>
+                  <span>DIRECT COMMUNICATION CHANNEL</span>
+                </div>
+
+                <h3 class="contact-heading">قناة المراسلة الرسمية</h3>
+                <p class="contact-sub">
+                  يمكنك التواصل مباشرة مع مؤسس الأكاديمية عبر البريد الإلكتروني المعتمد، وسيتم الرد على جميع الاستفسارات والرسائل بكل ترحيب.
+                </p>
+
+                <!-- Official Email Card -->
+                <div class="email-display-box">
+                  <div class="email-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="email-texts">
+                    <span class="email-label">البريد الإلكتروني المباشر // Official Email</span>
+                    <!-- Mailto Link -->
+                    <a href="mailto:salehebachike@gmail.com" class="email-address-link" dir="ltr" id="founder-email-link">
+                      salehebachike@gmail.com
+                    </a>
+                  </div>
+                  <button id="copy-email-btn" class="btn-copy-email" title="نسخ البريد الإلكتروني" aria-label="نسخ البريد الإلكتروني">
+                    <svg class="copy-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span class="copy-tooltip" id="copy-tooltip">نسخ البريد</span>
+                  </button>
+                </div>
+
+                <!-- Clickable Mailto Action Button -->
+                <div class="contact-buttons-group">
+                  <a href="mailto:salehebachike@gmail.com" class="btn btn-primary btn-glow">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="22" y1="2" x2="11" y2="13"></line>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                    <span>إرسال بريد إلكتروني الآن (Send Email)</span>
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- Security Protocol Card / Guarantee -->
+              <div class="contact-guarantee-col">
+                <div class="terminal-box" dir="ltr">
+                  <div class="t-head">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="t-name">contact_protocol.sh</span>
+                  </div>
+                  <div class="t-body">
+                    <p><span class="c-green"># MR.SALL Academy Contact Gate</span></p>
+                    <p><span class="c-cyan">RECIPIENT:</span> صالح عبد القيوم بالشيخ</p>
+                    <p><span class="c-cyan">TARGET:</span> salehebachike@gmail.com</p>
+                    <p><span class="c-cyan">PGP_STATUS:</span> VERIFIED_CHANNEL</p>
+                    <p><span class="c-cyan">RESPONSE_TIME:</span> TYPICALLY &lt; 24 HOURS</p>
+                    <p><span class="c-green">&gt; READY TO RECEIVE INQUIRIES...</span></p>
+                  </div>
+                </div>
+
+                <div class="contact-features-list">
+                  <div class="c-feat">
+                    <span class="feat-bullet">🛡️</span>
+                    <span>استشارات تعليمية وإرشاد في مجالات الأمن السيبراني.</span>
+                  </div>
+                  <div class="c-feat">
+                    <span class="feat-bullet">💡</span>
+                    <span>اقتراحات لإضافة مسارات تدريبية أو مواضيع جديدة.</span>
+                  </div>
+                  <div class="c-feat">
+                    <span class="feat-bullet">🤝</span>
+                    <span>التعاون في مشاريع التطوير التكنولوجي والبرمجي.</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- INTERACTIVE EMBEDDED VIDEO MODAL PLAYER -->
+  <div id="video-modal" class="video-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-video-title">
+    <div class="video-modal-backdrop" id="modal-backdrop"></div>
+    <div class="video-modal-container">
+      
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">MR.SALL THEATER PLAYER</span>
+          <h3 id="modal-video-title" class="modal-video-title">عنوان الدورة</h3>
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="إغلاق مشغل الفيديو">✕</button>
+      </div>
+
+      <!-- Responsive 16:9 Video Container -->
+      <div class="modal-video-wrapper">
+        <iframe 
+          id="modal-video-iframe" 
+          src="" 
+          title="YouTube Video Player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="modal-footer">
+        <span class="modal-hint">💡 يمكنك المشاهدة مباشرة هنا أو فتح الرابط الأصلي على منصة YouTube لمتابعة التعليقات والملاحظات.</span>
+        <a id="modal-external-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-cyber">
+          <span>فتح في YouTube ↗</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Top Row: Brand & Nav Links -->
+      <div class="footer-top-row">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="footer-brand-link">
+            <img src="assets/logo.svg" alt="MR.SALL Cybersecurity Academy" class="footer-logo" width="200" height="46">
+          </a>
+          <p class="footer-tagline">
+            Learn. Protect. Innovate.
+          </p>
+          <!-- Required Footer Text 1 -->
+          <p class="footer-appreciation">
+            "Thank you for visiting MR.SALL Cybersecurity Academy."
+          </p>
+          <p class="footer-appreciation-ar">
+            شكراً لزيارتك أكاديمية MR.SALL للأمن السيبراني.
+          </p>
+        </div>
+
+        <!-- Section Navigation Links -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">أقسام المنصة</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">الرئيسية (Home)</a></li>
+            <li><a href="intro.html" style="color: var(--neon-green);">🎬 المقدمة السينمائية (Cinematic Intro)</a></li>
+            <li><a href="#what-is-cyber">ما هو الأمن السيبراني؟ (About)</a></li>
+            <li><a href="#cia-triad">الثالوث الأمني (CIA Triad)</a></li>
+            <li><a href="#branches">فروع الأمن السيبراني (Branches)</a></li>
+            <li><a href="#courses">الدورات التعليمية (Courses)</a></li>
+            <li><a href="#founder">عن المؤسس (Founder)</a></li>
+            <li><a href="#register">انضم إلى الأكاديمية (Join)</a></li>
+            <li><a href="#contact">تواصل معنا (Contact)</a></li>
+          </ul>
+        </div>
+
+        <!-- Security & Legal Col -->
+        <div class="footer-legal-col">
+          <h4 class="footer-col-title">معلومات المنصة</h4>
+          <div class="footer-badges-list">
+            <div class="f-badge">
+              <span class="f-badge-dot"></span>
+              <span>100% Free Educational Resource</span>
+            </div>
+            <div class="f-badge">
+              <span class="f-badge-dot"></span>
+              <span>Pure Vanilla JS / HTML5 / CSS3</span>
+            </div>
+            <div class="f-badge">
+              <span class="f-badge-dot"></span>
+              <span>Optimized for Netlify Hosting</span>
+            </div>
+            <div class="f-badge">
+              <span class="f-badge-dot"></span>
+              <span>Local Privacy-First Architecture</span>
+            </div>
+          </div>
+
+          <div class="footer-contact-mini">
+            <span class="mini-label">الدعم والتواصل:</span>
+            <a href="mailto:salehebachike@gmail.com" class="mini-email" dir="ltr">salehebachike@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Bottom Row: Required Credits & Copyright -->
+      <div class="footer-bottom-row">
+        
+        <!-- Required Footer Text 2 -->
+        <div class="footer-creator">
+          Created by <strong>صالح عبد القيوم بالشيخ</strong>
+        </div>
+
+        <!-- Required Footer Text 3 -->
+        <div class="footer-copyright" dir="ltr">
+          © 2026 MR.SALL. All Rights Reserved.
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="الرجوع للأعلى" title="الرجوع للأعلى">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+    <svg class="progress-ring" width="48" height="48">
+      <circle class="progress-ring-circle" stroke="#00ff9d" stroke-width="2.5" fill="transparent" r="21" cx="24" cy="24" />
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

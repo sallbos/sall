@@ -1,0 +1,507 @@
+/* ==========================================================================
+   MR.SALL – EPIC CYBERSECURITY CINEMATIC INTRO
+   Styles & Cinematic Theater Viewport (1080p 16:9)
+   ========================================================================== */
+
+:root {
+  --bg-dark: #020408;
+  --neon-green: #00ff9d;
+  --electric-blue: #00d2ff;
+  --cyber-red: #ff3366;
+  --text-primary: #ffffff;
+  --font-cyber: 'Orbitron', 'Rajdhani', sans-serif;
+  --font-mono: 'Share Tech Mono', 'Consolas', monospace;
+  --font-sans: 'Rajdhani', -apple-system, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.intro-body {
+  background-color: #000000;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Stage Wrapper (Fixed 16:9 Cinematic Container) */
+.stage-wrapper {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #000;
+}
+
+.stage-aspect-box {
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 16 / 9;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 255, 157, 0.1);
+  background: #000000;
+}
+
+/* 1920x1080 Main Canvas */
+#intro-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #000000;
+}
+
+/* Cinematic Vignette */
+.cinematic-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 45%, rgba(0, 0, 0, 0.88) 100%);
+  z-index: 5;
+}
+
+/* Scanline Effect */
+.cinematic-scanlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  opacity: 0.35;
+  z-index: 6;
+}
+
+/* Screen Flash Overlay */
+.flash-overlay {
+  position: absolute;
+  inset: 0;
+  background: #00ff9d;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.08s ease-out;
+}
+
+.flash-overlay.active {
+  opacity: 0.85;
+}
+
+.flash-overlay.white-flash {
+  background: #ffffff;
+  opacity: 0.95;
+}
+
+/* Start / Audio Unlock Overlay */
+.start-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 4, 8, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s;
+}
+
+.start-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.start-card {
+  text-align: center;
+  max-width: 520px;
+  background: rgba(7, 13, 23, 0.85);
+  border: 1px solid rgba(0, 255, 157, 0.3);
+  border-radius: 20px;
+  padding: 40px 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 255, 157, 0.15);
+  position: relative;
+}
+
+.shield-pulse-icon {
+  margin-bottom: 20px;
+  display: inline-block;
+  animation: floatPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes floatPulse {
+  0% { transform: translateY(0) scale(0.96); filter: drop-shadow(0 0 15px rgba(0, 255, 157, 0.4)); }
+  100% { transform: translateY(-8px) scale(1.04); filter: drop-shadow(0 0 30px rgba(0, 210, 255, 0.7)); }
+}
+
+.start-title {
+  font-family: var(--font-cyber);
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.neon-green {
+  color: var(--neon-green);
+}
+
+.start-subtitle {
+  font-family: var(--font-cyber);
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  color: var(--electric-blue);
+  margin-bottom: 20px;
+}
+
+.start-spec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.spec-chip {
+  background: rgba(0, 255, 157, 0.08);
+  border: 1px solid rgba(0, 255, 157, 0.25);
+  color: var(--neon-green);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  padding: 4px 10px;
+  border-radius: 14px;
+}
+
+.start-actions {
+  margin-bottom: 22px;
+}
+
+.btn-epic-play {
+  background: linear-gradient(135deg, #00ff9d 0%, #00d2ff 100%);
+  color: #030711;
+  font-family: var(--font-cyber);
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 16px 36px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 25px rgba(0, 255, 157, 0.5);
+}
+
+.btn-epic-play:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 157, 0.8);
+}
+
+.play-svg-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.logo-upload-prompt {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 18px;
+}
+
+.upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 0.84rem;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.upload-label:hover {
+  color: var(--neon-green);
+  border-color: var(--neon-green);
+  background: rgba(0, 255, 157, 0.05);
+}
+
+.upload-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+/* Playback Timeline Bar inside Stage */
+.playback-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 24px 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.playback-bar:hover {
+  opacity: 1;
+}
+
+.timeline-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.timeline-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-green), var(--electric-blue));
+  box-shadow: 0 0 10px var(--neon-green);
+  transition: width 0.05s linear;
+}
+
+.playback-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--neon-green);
+  letter-spacing: 1px;
+}
+
+.time-counter {
+  color: #94a3b8;
+}
+
+/* Director HUD Footer */
+.director-hud {
+  width: 100vw;
+  height: 64px;
+  background: #040810;
+  border-top: 1px solid rgba(0, 255, 157, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  padding: 0 24px;
+}
+
+.director-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.director-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hud-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hud-brand-text {
+  font-family: var(--font-cyber);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.hud-brand-text strong {
+  color: var(--neon-green);
+}
+
+.hud-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--electric-blue);
+  background: rgba(0, 210, 255, 0.1);
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.director-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hud-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 7px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.hud-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.hud-btn:hover {
+  background: rgba(0, 255, 157, 0.15);
+  border-color: var(--neon-green);
+  color: var(--neon-green);
+}
+
+.hud-btn-export {
+  background: rgba(0, 255, 157, 0.15);
+  border-color: var(--neon-green);
+  color: var(--neon-green);
+}
+
+.hud-btn-export:hover {
+  background: var(--neon-green);
+  color: #030711;
+  box-shadow: 0 0 15px var(--neon-green);
+}
+
+.hud-btn-export.recording {
+  background: rgba(255, 51, 102, 0.2);
+  border-color: var(--cyber-red);
+  color: #ff3366;
+  animation: pulseRecording 1s infinite alternate;
+}
+
+@keyframes pulseRecording {
+  from { opacity: 0.7; }
+  to { opacity: 1; box-shadow: 0 0 15px var(--cyber-red); }
+}
+
+.hud-btn-main {
+  background: rgba(0, 210, 255, 0.15);
+  border-color: var(--electric-blue);
+  color: var(--electric-blue);
+}
+
+.hud-btn-main:hover {
+  background: var(--electric-blue);
+  color: #030711;
+  box-shadow: 0 0 15px var(--electric-blue);
+}
+
+/* Toast for recording */
+.recording-toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: #09121f;
+  border: 1px solid var(--neon-green);
+  padding: 14px 20px;
+  border-radius: 12px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 255, 157, 0.3);
+  animation: slideInRight 0.3s ease;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.rec-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff3366;
+  box-shadow: 0 0 10px #ff3366;
+  animation: blinkDot 1s infinite;
+}
+
+@keyframes blinkDot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.rec-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.rec-text strong {
+  font-family: var(--font-cyber);
+  font-size: 0.85rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.rec-text span {
+  font-size: 0.76rem;
+  color: #94a3b8;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .director-hud {
+    height: auto;
+    padding: 10px 14px;
+  }
+  .director-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hud-badge {
+    display: none;
+  }
+  .start-title {
+    font-size: 2.2rem;
+  }
+}
