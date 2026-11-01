@@ -54,14 +54,14 @@
   let mediaRecorder = null;
   let recordedChunks = [];
 
-  // Default Logo
+  // Default Official Brand Logo
   let logoImg = new Image();
   logoImg.crossOrigin = 'anonymous';
-  logoImg.src = 'assets/logo.svg';
+  logoImg.src = 'assets/logo.jpg';
 
   let shieldOnlyImg = new Image();
   shieldOnlyImg.crossOrigin = 'anonymous';
-  shieldOnlyImg.src = 'assets/favicon.svg';
+  shieldOnlyImg.src = 'assets/logo.jpg';
 
   // Offscreen Canvas for 3D metallic & specular effect
   const offCanvas = document.createElement('canvas');
